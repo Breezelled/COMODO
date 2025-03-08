@@ -1,0 +1,2 @@
+'test_top1_accuracy': 0.5759470997402752, 'test_top3_accuracy': 0.7590978296563872, 'test_top5_accuracy': 0.8294026330716183
+model/MOMENT-1-small-concat-finetuned-ego4d_data-40epochs-0.0001lr-48bs-0clip

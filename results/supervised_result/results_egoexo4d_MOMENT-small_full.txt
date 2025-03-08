@@ -1,0 +1,2 @@
+'test_top1_accuracy': 0.7926816975236047, 'test_top3_accuracy': 0.9703638990625315, 'test_top5_accuracy': 0.9933469977487316
+model/MOMENT-1-small-concat-finetuned-egoexo4d-40epochs-0.0001lr-48bs-0clip

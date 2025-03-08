@@ -1,0 +1,13 @@
+
+Dataset: egoexo4d
+Fine-tuning type: full
+Number of epochs: 40
+Learning rate: 0.0001
+Batch size: 48
+
+Test results:
+accuracy: 0.8422432041934075
+top3_accuracy: 0.9795033769026579
+top5_accuracy: 0.9940526191996236
+
+Validation accuracy: 0.8303875968992248

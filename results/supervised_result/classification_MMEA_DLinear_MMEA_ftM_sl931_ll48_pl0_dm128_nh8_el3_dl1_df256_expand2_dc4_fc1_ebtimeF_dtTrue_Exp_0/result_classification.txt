@@ -1,0 +1,3 @@
+classification_MMEA_DLinear_MMEA_ftM_sl931_ll48_pl0_dm128_nh8_el3_dl1_df256_expand2_dc4_fc1_ebtimeF_dtTrue_Exp_0  
+Acc@1: 0.2400914579629898, Acc@3: 0.3772865831851959, Acc@5: 0.47179877758026123
+

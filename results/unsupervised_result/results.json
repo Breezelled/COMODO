@@ -1,0 +1,502 @@
+{
+    "IMU2CLIP&L2": [
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "egoexo4d",
+            "model": "model/timesformer-base-finetuned-k400_Mantis-8M_egoexo4d_0.0003_20_infonce.pth",
+            "acc1": 0.7946305567689258,
+            "acc3": 0.9767816941635026,
+            "acc5": 0.9943886294143341
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "egoexo4d",
+            "model": "model/videomae-base-finetuned-kinetics_Mantis-8M_egoexo4d_0.0003_20_infonce.pth",
+            "acc1": 0.79093444440711,
+            "acc3": 0.9757400624978999,
+            "acc5": 0.9944894324787473
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "ego4d_data",
+            "model": "model/timesformer-base-finetuned-k400_Mantis-8M_ego4d_data_0.0003_20_infonce.pth",
+            "acc1": 0.548317759799385,
+            "acc3": 0.7603665999940293,
+            "acc5": 0.8402842045556318
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "ego4d_data",
+            "model": "model/videomae-base-finetuned-kinetics_Mantis-8M_ego4d_data_0.0003_20_infonce.pth",
+            "acc1": 0.5443174015583485,
+            "acc3": 0.7591724632056602,
+            "acc5": 0.838925873958862
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "egoexo4d",
+            "model": "model/timesformer-base-finetuned-k400_Mantis-8M_ego4d_data_0.0003_20_infonce.pth",
+            "acc1": 0.7969826282718995,
+            "acc3": 0.9768488962064447,
+            "acc5": 0.9944894324787473
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "UESTC-MMEA-CL",
+            "model": "model/timesformer-base-finetuned-k400_Mantis-8M_ego4d_data_0.0003_20_infonce.pth",
+            "acc1": 0.9278115501519757,
+            "acc3": 0.9878419452887538,
+            "acc5": 0.9946808510638298
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "UESTC-MMEA-CL",
+            "model": "model/timesformer-base-finetuned-k400_Mantis-8M_egoexo4d_0.0003_20_infonce.pth",
+            "acc1": 0.9278115501519757,
+            "acc3": 0.9893617021276596,
+            "acc5": 0.9969604863221885
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "ego4d_data",
+            "model": "model/timesformer-base-finetuned-k400_Mantis-8M_egoexo4d_0.0003_20_infonce.pth",
+            "acc1": 0.5175388840791713,
+            "acc3": 0.7443651670298833,
+            "acc5": 0.8304922828910052
+        },
+        {
+            "imu": "AutonLab/MOMENT-1-small",
+            "dataset": "egoexo4d",
+            "model": "model/videomae-base-finetuned-kinetics_MOMENT-1-small_egoexo4d_0.0003_20_infonce.pth",
+            "acc1": 0.6977252108464097,
+            "acc3": 0.9461039615604314,
+            "acc5": 0.9881052383992474
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "egoexo4d",
+            "model": "model/timesformer-base-finetuned-k400_Mantis-8M_egoexo4d_0.0003_20_l2.pth",
+            "acc1": 0.7707402305030073,
+            "acc3": 0.9710023184704815,
+            "acc5": 0.9932797957057895
+        },
+        {
+            "imu": "AutonLab/MOMENT-1-small",
+            "dataset": "egoexo4d",
+            "model": "model/timesformer-base-finetuned-k400_MOMENT-1-small_egoexo4d_0.0003_20_infonce.pth",
+            "acc1": 0.7073351029871308,
+            "acc3": 0.951547327038742,
+            "acc5": 0.9897516884513289
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "ego4d_data",
+            "model": "model/timesformer-base-finetuned-k400_Mantis-8M_ego4d_data_0.0003_20_l2.pth",
+            "acc1": 0.4932083470161507,
+            "acc3": 0.7268710630802758,
+            "acc5": 0.8163417619488312
+        },
+        {
+            "imu": "AutonLab/MOMENT-1-small",
+            "dataset": "ego4d_data",
+            "model": "model/videomae-base-finetuned-kinetics_MOMENT-1-small_ego4d_data_0.0003_20_infonce.pth",
+            "acc1": 0.4138579574290235,
+            "acc3": 0.658252977878616,
+            "acc5": 0.7645012986237574
+        },
+        {
+            "imu": "AutonLab/MOMENT-1-small",
+            "dataset": "ego4d_data",
+            "model": "model/timesformer-base-finetuned-k400_MOMENT-1-small_ego4d_data_0.0003_20_infonce.pth",
+            "acc1": 0.43594948801385197,
+            "acc3": 0.6816879123503597,
+            "acc5": 0.7806221452667403
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "UESTC-MMEA-CL",
+            "model": "model/timesformer-base-finetuned-k400_Mantis-8M_UESTC-MMEA-CL_0.0003_20_infonce.pth",
+            "acc1": 0.9141337386018237,
+            "acc3": 0.9870820668693009,
+            "acc5": 0.9946808510638298
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "UESTC-MMEA-CL",
+            "model": "model/videomae-base-finetuned-kinetics_Mantis-8M_UESTC-MMEA-CL_0.0003_20_infonce.pth",
+            "acc1": 0.9088145896656535,
+            "acc3": 0.986322188449848,
+            "acc5": 0.9946808510638298
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "UESTC-MMEA-CL",
+            "model": "model/timesformer-base-finetuned-k400_Mantis-8M_UESTC-MMEA-CL_0.0003_20_l2.pth",
+            "acc1": 0.8943768996960486,
+            "acc3": 0.973404255319149,
+            "acc5": 0.9870820668693009
+        },
+        {
+            "imu": "AutonLab/MOMENT-1-small",
+            "dataset": "UESTC-MMEA-CL",
+            "model": "model/timesformer-base-finetuned-k400_MOMENT-1-small_UESTC-MMEA-CL_0.0003_20_infonce.pth",
+            "acc1": 0.7879939209726444,
+            "acc3": 0.9217325227963525,
+            "acc5": 0.9513677811550152
+        },
+        {
+            "imu": "AutonLab/MOMENT-1-small",
+            "dataset": "UESTC-MMEA-CL",
+            "model": "model/videomae-base-finetuned-kinetics_MOMENT-1-small_UESTC-MMEA-CL_0.0003_20_infonce.pth",
+            "acc1": 0.78419452887538,
+            "acc3": 0.9118541033434651,
+            "acc5": 0.9460486322188449
+        }
+    ],
+    "COMODO": [
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "egoexo4d",
+            "model": "model/egoexo4d_concat_16384qs_6.25sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_48bs_2048mhd_128mod_Mantis-8M_timesformer-base-finetuned-k400.pth",
+            "acc1": 0.8461409226840496,
+            "acc3": 0.9820906555559289,
+            "acc5": 0.9955646651658211
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "egoexo4d",
+            "model": "model/egoexo4d_concat_32768qs_6.25sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_48bs_2048mhd_128mod_Mantis-8M_timesformer-base-finetuned-k400.pth",
+            "acc1": 0.845065689996976,
+            "acc3": 0.9820906555559289,
+            "acc5": 0.9962702866167131
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "egoexo4d",
+            "model": "model/egoexo4d_concat_65536qs_6.25sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_48bs_2048mhd_128mod_Mantis-8M_timesformer-base-finetuned-k400.pth",
+            "acc1": 0.8426464164510601,
+            "acc3": 0.982796277006821,
+            "acc5": 0.9959006753805316
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "egoexo4d",
+            "model": "model/egoexo4d_concat_8192qs_6.25sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_48bs_2048mhd_128mod_Mantis-8M_timesformer-base-finetuned-k400.pth",
+            "acc1": 0.8471153523067101,
+            "acc3": 0.982796277006821,
+            "acc5": 0.9956654682302342
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "ego4d_data",
+            "model": "model/ego4d_data_concat_16384qs_6.25sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_48bs_2048mhd_128mod_Mantis-8M_timesformer-base-finetuned-k400.pth",
+            "acc1": 0.5907842493357615,
+            "acc3": 0.7907126011284593,
+            "acc5": 0.8589724452936084
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "ego4d_data",
+            "model": "model/ego4d_data_concat_1024qs_6.25sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_48bs_2048mhd_128mod_Mantis-8M_timesformer-base-finetuned-k400.pth",
+            "acc1": 0.5836045018956921,
+            "acc3": 0.788518374779831,
+            "acc5": 0.8562557841000686
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "ego4d_data",
+            "model": "model/ego4d_data_concat_65536qs_6.25sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_48bs_2048mhd_128mod_Mantis-8M_timesformer-base-finetuned-k400.pth",
+            "acc1": 0.5882019285309132,
+            "acc3": 0.7875630653491358,
+            "acc5": 0.8573305072096009
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "ego4d_data",
+            "model": "model/ego4d_data_concat_8192qs_6.25sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_48bs_2048mhd_128mod_Mantis-8M_timesformer-base-finetuned-k400.pth",
+            "acc1": 0.5877392005254202,
+            "acc3": 0.789100516464161,
+            "acc5": 0.857285727080037
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "egoexo4d",
+            "model": "model/egoexo4d_concat_512qs_6.25sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_48bs_2048mhd_128mod_Mantis-8M_timesformer-base-finetuned-k400.pth",
+            "acc1": 0.8473841604784785,
+            "acc3": 0.9836699035650683,
+            "acc5": 0.9963710896811263
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "egoexo4d",
+            "model": "model/egoexo4d_concat_256qs_6.25sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_48bs_2048mhd_128mod_Mantis-8M_timesformer-base-finetuned-k400.pth",
+            "acc1": 0.8449984879540338,
+            "acc3": 0.9832330902859447,
+            "acc5": 0.9959006753805316
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "ego4d_data",
+            "model": "model/ego4d_data_concat_65536qs_6.25sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_48bs_2048mhd_128mod_Mantis-8M_timesformer-base-finetuned-k400.pth",
+            "acc1": 0.5880228080126578,
+            "acc3": 0.7875182852195719,
+            "acc5": 0.8574947010180016
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "egoexo4d",
+            "model": "model/egoexo4d_concat_1024qs_3.125sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_128bs_2048mhd_128mod_Mantis-8M_videomae-base-finetuned-kinetics.pth",
+            "acc1": 0.8445952756963812,
+            "acc3": 0.9830650851785895,
+            "acc5": 0.9955982661872921
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "ego4d_data",
+            "model": "model/ego4d_data_concat_16384qs_6.25sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_128bs_2048mhd_128mod_Mantis-8M_timesformer-base-finetuned-k400.pth",
+            "acc1": 0.591261904051109,
+            "acc3": 0.7879213063856465,
+            "acc5": 0.8564796847478878
+        },
+        {
+            "imu": "AutonLab/MOMENT-1-small",
+            "dataset": "egoexo4d",
+            "model": "model/egoexo4d_concat_1024qs_6.25sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_128bs_2048mhd_128mod_MOMENT-1-small_timesformer-base-finetuned-k400.pth",
+            "acc1": 0.8184200799704311,
+            "acc3": 0.9793353717953026,
+            "acc5": 0.9954302610799368
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "egoexo4d",
+            "model": "model/egoexo4d_concat_1024qs_6.25sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_128bs_2048mhd_128mod_Mantis-8M_timesformer-base-finetuned-k400.pth",
+            "acc1": 0.8491986156379154,
+            "acc3": 0.982829878028292,
+            "acc5": 0.9958670743590605
+        },
+        {
+            "imu": "AutonLab/MOMENT-1-small",
+            "dataset": "egoexo4d",
+            "model": "model/egoexo4d_concat_1024qs_3.125sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_128bs_2048mhd_128mod_MOMENT-1-small_videomae-base-finetuned-kinetics.pth",
+            "acc1": 0.8159672054030442,
+            "acc3": 0.9768152951849737,
+            "acc5": 0.9947918416719869
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "egoexo4d",
+            "model": "",
+            "acc1": 0.7647256476596889,
+            "acc3": 0.9697590806760525,
+            "acc5": 0.9921037599543026
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "ego4d_data",
+            "model": "",
+            "acc1": 0.47493805415410334,
+            "acc3": 0.7162730990835,
+            "acc5": 0.8123712571275039
+        },
+        {
+            "imu": "AutonLab/MOMENT-1-small",
+            "dataset": "egoexo4d",
+            "model": "",
+            "acc1": 0.6813951144114782,
+            "acc3": 0.9354860387755788,
+            "acc5": 0.9842747219515473
+        },
+        {
+            "imu": "AutonLab/MOMENT-1-small",
+            "dataset": "ego4d_data",
+            "model": "",
+            "acc1": 0.3970057020031645,
+            "acc3": 0.6447443054601905,
+            "acc5": 0.75318685255396
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "ego4d_data",
+            "model": "model/ego4d_data_concat_16384qs_3.125sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_128bs_2048mhd_128mod_Mantis-8M_videomae-base-finetuned-kinetics.pth",
+            "acc1": 0.5900379138430307,
+            "acc3": 0.7897722184076186,
+            "acc5": 0.8594799534286652
+        },
+        {
+            "imu": "AutonLab/MOMENT-1-small",
+            "dataset": "ego4d_data",
+            "model": "model/ego4d_data_concat_16384qs_6.25sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_128bs_2048mhd_128mod_MOMENT-1-small_timesformer-base-finetuned-k400.pth",
+            "acc1": 0.5750813505687077,
+            "acc3": 0.7649341732095412,
+            "acc5": 0.8375227632325283
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "egoexo4d",
+            "model": "model/ego4d_data_concat_16384qs_6.25sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_128bs_2048mhd_128mod_Mantis-8M_timesformer-base-finetuned-k400.pth",
+            "acc1": 0.825375491414939,
+            "acc3": 0.9802089983535499,
+            "acc5": 0.9955646651658211
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "UESTC-MMEA-CL",
+            "model": "",
+            "acc1": 0.9095744680851063,
+            "acc3": 0.9855623100303952,
+            "acc5": 0.993920972644377
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "UESTC-MMEA-CL",
+            "model": "model/ego4d_data_concat_16384qs_6.25sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_128bs_2048mhd_128mod_Mantis-8M_timesformer-base-finetuned-k400.pth",
+            "acc1": 0.9422492401215805,
+            "acc3": 0.9878419452887538,
+            "acc5": 0.9962006079027356
+        },
+        {
+            "imu": "AutonLab/MOMENT-1-small",
+            "dataset": "UESTC-MMEA-CL",
+            "model": "",
+            "acc1": 0.8366261398176292,
+            "acc3": 0.9551671732522796,
+            "acc5": 0.9741641337386018
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "UESTC-MMEA-CL",
+            "model": "model/egoexo4d_concat_1024qs_6.25sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_48bs_2048mhd_128mod_Mantis-8M_timesformer-base-finetuned-k400.pth",
+            "acc1": 0.9483282674772037,
+            "acc3": 0.9946808510638298,
+            "acc5": 0.9969604863221885
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "ego4d_data",
+            "model": "model/egoexo4d_concat_1024qs_6.25sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_48bs_2048mhd_128mod_Mantis-8M_timesformer-base-finetuned-k400.pth",
+            "acc1": 0.5661701047855032,
+            "acc3": 0.772516941815685,
+            "acc5": 0.8479117532913395
+        },
+        {
+            "imu": "AutonLab/MOMENT-1-small",
+            "dataset": "ego4d_data",
+            "model": "model/ego4d_data_concat_16384qs_3.125sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_128bs_2048mhd_128mod_MOMENT-1-small_videomae-base-finetuned-kinetics.pth",
+            "acc1": 0.577424844015882,
+            "acc3": 0.766561184583694,
+            "acc5": 0.8379108576887483
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "UESTC-MMEA-CL",
+            "model": "model/mantis_ego4d_data_full_e40_lr0.0001_bs48.pth",
+            "acc1": 0.9171732522796353,
+            "acc3": 0.9848024316109423,
+            "acc5": 0.993161094224924
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "egoexo4d",
+            "model": "model/mantis_ego4d_data_full_e40_lr0.0001_bs48.pth",
+            "acc1": 0.8078693592285205,
+            "acc3": 0.9781929370652868,
+            "acc5": 0.9952622559725816
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "ego4d_data",
+            "model": "model/mantis_egoexo4d_full_e40_lr0.0001_bs48.pth",
+            "acc1": 0.5258082813386273,
+            "acc3": 0.7554557124518614,
+            "acc5": 0.8383138788548228
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "UESTC-MMEA-CL",
+            "model": "model/mantis_egoexo4d_full_e40_lr0.0001_bs48.pth",
+            "acc1": 0.9224924012158054,
+            "acc3": 0.9810030395136778,
+            "acc5": 0.9916413373860182
+        },
+        {
+            "imu": "AutonLab/MOMENT-1-small",
+            "dataset": "egoexo4d",
+            "model": "model/egoexo4d_mean_1024qs_6.25sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_128bs_2048mhd_128mod_MOMENT-1-small_timesformer-base-finetuned-k400.pth",
+            "acc1": 0.8086421827223548,
+            "acc3": 0.9747992338967104,
+            "acc5": 0.9941870232855079
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "UESTC-MMEA-CL",
+            "model": "model/UESTC-MMEA-CL_concat_512qs_6.25sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_128bs_2048mhd_128mod_Mantis-8M_timesformer-base-finetuned-k400.pth",
+            "acc1": 0.9217325227963525,
+            "acc3": 0.9886018237082067,
+            "acc5": 0.9977203647416414
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "UESTC-MMEA-CL",
+            "model": "model/UESTC-MMEA-CL_concat_256qs_6.25sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_128bs_2048mhd_128mod_Mantis-8M_timesformer-base-finetuned-k400.pth",
+            "acc1": 0.9202127659574468,
+            "acc3": 0.9855623100303952,
+            "acc5": 0.9969604863221885
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "UESTC-MMEA-CL",
+            "model": "model/UESTC-MMEA-CL_concat_1024qs_6.25sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_128bs_2048mhd_128mod_Mantis-8M_timesformer-base-finetuned-k400.pth",
+            "acc1": 0.9202127659574468,
+            "acc3": 0.9893617021276596,
+            "acc5": 0.9984802431610942
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "UESTC-MMEA-CL",
+            "model": "model/UESTC-MMEA-CL_concat_2048qs_6.25sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_128bs_2048mhd_128mod_Mantis-8M_timesformer-base-finetuned-k400.pth",
+            "acc1": 0.9247720364741642,
+            "acc3": 0.9901215805471124,
+            "acc5": 0.9977203647416414
+        },
+        {
+            "imu": "paris-noah/Mantis-8M",
+            "dataset": "UESTC-MMEA-CL",
+            "model": "model/UESTC-MMEA-CL_concat_2048qs_3.125sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_128bs_2048mhd_128mod_Mantis-8M_videomae-base-finetuned-kinetics.pth",
+            "acc1": 0.9354103343465046,
+            "acc3": 0.9924012158054711,
+            "acc5": 0.9977203647416414
+        },
+        {
+            "imu": "AutonLab/MOMENT-1-small",
+            "dataset": "UESTC-MMEA-CL",
+            "model": "model/UESTC-MMEA-CL_concat_2048qs_6.25sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_128bs_2048mhd_128mod_MOMENT-1-small_timesformer-base-finetuned-k400.pth",
+            "acc1": 0.8115501519756839,
+            "acc3": 0.9224924012158054,
+            "acc5": 0.9536474164133738
+        },
+        {
+            "imu": "AutonLab/MOMENT-1-small",
+            "dataset": "UESTC-MMEA-CL",
+            "model": "model/UESTC-MMEA-CL_concat_2048qs_3.125sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_128bs_2048mhd_128mod_MOMENT-1-small_videomae-base-finetuned-kinetics.pth",
+            "acc1": 0.7948328267477204,
+            "acc3": 0.9118541033434651,
+            "acc5": 0.9445288753799392
+        },
+        {
+            "imu": "AutonLab/MOMENT-1-small",
+            "dataset": "UESTC-MMEA-CL",
+            "model": "model/UESTC-MMEA-CL_mean_2048qs_6.25sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_128bs_2048mhd_128mod_MOMENT-1-small_timesformer-base-finetuned-k400.pth",
+            "acc1": 0.743161094224924,
+            "acc3": 0.8890577507598785,
+            "acc5": 0.9308510638297872
+        },
+        {
+            "imu": "AutonLab/MOMENT-1-small",
+            "dataset": "ego4d_data",
+            "model": "model/ego4d_data_mean_16384qs_6.25sr_0.05stutmp_0.1tchtmp_0.0003lr_20epochs_128bs_2048mhd_128mod_MOMENT-1-small_timesformer-base-finetuned-k400.pth",
+            "acc1": 0.5569006179657879,
+            "acc3": 0.7521419828641371,
+            "acc5": 0.8292384392632176
+        }
+    ]
+}

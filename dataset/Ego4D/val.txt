@@ -1,0 +1,162 @@
+0de39e75-fb19-47d4-818d-fff874b05ab9	cleaning / laundry
+7b016e40-d10a-43b3-9222-cb4787a95432	cleaning / laundry
+db16e9f4-39b2-436b-b4e8-2b7afa8c4a1c	cleaning / laundry
+3249fbee-78f6-44d9-80b9-b38a37bbaf6e	cleaning / laundry
+ed11ed4a-fc40-443b-919f-3c4ec2001250	cleaning / laundry
+74d05939-ec8d-4da5-9a6f-35a0b97e22e2	cleaning / laundry
+dbb150a2-a47c-42b0-82e4-b076b69f0fb2	cleaning / laundry
+e58a1cd6-cf82-4477-b8a3-8f749ebceffe	cleaning / laundry
+82b9dd3c-5072-48cd-a8f4-9515ea5b2c13	cleaning / laundry
+d89ddccf-4845-4f01-8de2-23cde70c0a45	cleaning / laundry
+8d9e3484-81d3-478f-a056-c2e78d84a6b3	cleaning / laundry
+da6fa34f-d1bd-4a73-bfcd-3832f06b3ee9	cleaning / laundry
+6e5fd566-1bbe-49cc-ad61-2cafc11a2036	cleaning / laundry
+ceba5343-c1d5-4f8a-a6bb-ef39c3923e6e	cleaning / laundry
+7e4de34c-b5e4-428d-b2d2-5352d5894d9f	cleaning / laundry
+0a90656a-eac8-49fa-a253-78f5626c8d5c	cleaning / laundry
+82e05cd7-f98c-4e23-ac44-32df741e41f1	cleaning / laundry
+18a2984e-01d1-41f1-8c0e-2b314c8c233f	cleaning / laundry
+cbe34c13-e91f-4d2f-a902-c011503b6a8f	cleaning / laundry
+4d95da89-5c7c-4c47-8772-e783db6d7c0c	cleaning / laundry
+84020280-95d3-47c3-9716-647c25a9cb3c	cleaning / laundry
+5613f20a-991f-43c1-9a7d-87632ef6795c	cleaning / laundry
+7c8a9c21-ba3c-41b8-a7e0-be7311fde0ee	cleaning / laundry
+4d8a0a06-ac77-4c0f-a699-520566300df5	cleaning / laundry
+e42aa8c5-561b-4e53-84cb-b4192db92ab6	cleaning / laundry
+a0882cf7-9b53-4143-9ac1-548fe142084a	crafting/knitting/sewing/drawing/painting
+69df70cc-31ef-4dc6-a2aa-c23ab2784479	crafting/knitting/sewing/drawing/painting
+666e9020-446c-4cdc-9468-42af9188ce80	crafting/knitting/sewing/drawing/painting
+682aedeb-0c6e-4050-b5a9-5be7f5a479f1	crafting/knitting/sewing/drawing/painting
+fdf36515-a08a-4575-9a79-65d0ec260cc7	crafting/knitting/sewing/drawing/painting
+c2fa0704-bdc2-4edf-9c6d-e8ab2160f1b6	crafting/knitting/sewing/drawing/painting
+6ca4c551-a476-4af4-9b5f-1f9d0d18ccea	crafting/knitting/sewing/drawing/painting
+71df0613-8aae-4951-adf9-678af774fcfb	crafting/knitting/sewing/drawing/painting
+2446beef-dad6-4119-9b97-937bd44627b9	crafting/knitting/sewing/drawing/painting
+2481f41b-fdff-4c32-b273-80c776c8eafd	crafting/knitting/sewing/drawing/painting
+26ed1dd8-c21e-4c0a-95a5-6ff2999e4a85	crafting/knitting/sewing/drawing/painting
+6ac9ce64-b53e-40b6-b282-a9881da75f49	crafting/knitting/sewing/drawing/painting
+7fc39628-31b4-4862-b5bc-f6179c00413a	crafting/knitting/sewing/drawing/painting
+b0389cbe-5dcf-47b4-9fd9-51f6ffb2670e	crafting/knitting/sewing/drawing/painting
+51617b89-1624-465a-8aa5-f664e29d7771	crafting/knitting/sewing/drawing/painting
+9c303d2f-5582-4abb-a844-338d1c70d6cb	crafting/knitting/sewing/drawing/painting
+f7635138-d940-4475-9bf5-1becafad219c	crafting/knitting/sewing/drawing/painting
+50f3b696-607d-4a2b-964d-58f4ebd7f019	crafting/knitting/sewing/drawing/painting
+f4549acc-60aa-4adf-ab2a-11b9e03d067a	crafting/knitting/sewing/drawing/painting
+7f04502a-99fb-446a-85e4-a2952f85f7de	crafting/knitting/sewing/drawing/painting
+4d001d14-f9a7-4c27-af2f-37f1de51230d	crafting/knitting/sewing/drawing/painting
+2bb0e3ad-3a4d-4446-b3e8-3cfb86c43f7e	crafting/knitting/sewing/drawing/painting
+1120c597-930c-49b7-8a61-f0dce9c31be5	cooking
+002c3b5c-ed86-4af3-99a1-4b497b7c8a86	cooking
+27ddfcaf-4c2c-4193-917d-22ff60222a60	cooking
+f054bbcf-e9ed-42f7-8dd4-9167a9f24035	cooking
+39cfed05-9a45-4d70-9ee8-f6579380f6e3	cooking
+93f78437-229d-4824-a8c1-68d9b17e754d	cooking
+a6419de9-1e40-4793-b21b-9c8d9038835a	cooking
+cd435f5e-95c4-440c-88c7-c65c19f94c4e	cooking
+a75199b2-6032-427c-bb94-0429e97e1859	cooking
+c9a135a3-233e-4e76-9793-0fca387345e4	cooking
+dcd30089-0bff-430d-a8ae-c41516301d88	cooking
+2c0c6508-397f-4c48-aeb7-abc7a3cae8d1	cooking
+106e9447-8a09-4e89-964e-61c927827a56	cooking
+e8c52c5d-4d8f-4d9f-befd-29f661f80f27	cooking
+2931b191-15a1-4420-8b49-c2a59fc8912f	jobs related to construction/renovation company (director of work, tiler, plumber, electrician, handyman, etc)
+24902050-6f9d-42bc-aa7d-ecf468d89eef	jobs related to construction/renovation company (director of work, tiler, plumber, electrician, handyman, etc)
+d24836a0-f1eb-4093-8966-849e4a0d1fa8	jobs related to construction/renovation company (director of work, tiler, plumber, electrician, handyman, etc)
+f00332a6-d29f-4bf5-89a2-0284965b3f23	jobs related to construction/renovation company (director of work, tiler, plumber, electrician, handyman, etc)
+713602ca-86fa-40d1-bdab-371115b37fc9	jobs related to construction/renovation company (director of work, tiler, plumber, electrician, handyman, etc)
+2b5569df-5deb-4ebd-8a45-dd6524330eb8	jobs related to construction/renovation company (director of work, tiler, plumber, electrician, handyman, etc)
+bdf8a675-b236-4404-8819-d5dadded2cb1	jobs related to construction/renovation company (director of work, tiler, plumber, electrician, handyman, etc)
+599037f1-5825-4315-a75d-9a50d16959b5	jobs related to construction/renovation company (director of work, tiler, plumber, electrician, handyman, etc)
+3a9a814d-222f-4712-97b4-a71d9f8b5a4a	jobs related to construction/renovation company (director of work, tiler, plumber, electrician, handyman, etc)
+f9f1adf2-443e-4af9-bbf8-2aa97a03c7c8	jobs related to construction/renovation company (director of work, tiler, plumber, electrician, handyman, etc)
+2991b1be-bdae-4fa4-a529-ac46cefb4487	household management - caring for kids
+59815805-de31-4993-8f5e-f12b1537bcfc	household management - caring for kids
+ee3e83ac-28ad-4f6d-ab48-51d7a6b5e497	household management - caring for kids
+24b995e8-9150-43be-953c-f96959c151b5	household management - caring for kids
+71805e46-ca99-4b12-abb4-b1c1af470ae7	household management - caring for kids
+655e0641-f92b-4db0-acb3-223525247c90	household management - caring for kids
+50a395ca-e434-46f3-a2f8-67fc4ca3874b	household management - caring for kids
+6a513338-0c76-418f-b842-e89547decacf	household management - caring for kids
+c4f06549-15b5-49b8-b2d7-bf2a1c26edaa	household management - caring for kids
+a47718d6-30dc-4afa-8088-a62e1e81d3e6	household management - caring for kids
+a62b9ad8-5039-4916-b22a-3973de5e48b8	farmer
+f16d2f27-33eb-4510-a07e-0bb913c7f6b4	farmer
+5570f41c-4521-4d20-bc90-6b361f7bcff2	farmer
+52d94d3d-5e0b-4bdb-9048-55dcf06b4f9d	farmer
+d4f2eac6-6e00-49fc-9be6-b9e3ebd1ca85	farmer
+822e24f5-b703-49f6-8695-f0a9bca2ca48	farmer
+1da68f69-6fa2-4a1f-b763-14181861a617	farmer
+711a74cf-33f2-426f-89aa-1837864e54f9	carpenter
+6b91041f-bd60-4738-8305-46b144ce725d	carpenter
+a5d416f3-723a-4181-8ed3-3e3c97a4cd3c	carpenter
+28d73c89-e96d-4296-876a-329f908aeac6	carpenter
+554b7620-a064-44cb-9ccf-931301f195f9	carpenter
+c6da6ceb-5f40-436b-8c83-76458f46b3fb	carpenter
+d5c53bd8-8d48-4242-9893-09e40ee75927	carpenter
+70c31020-9fed-4e76-b127-2c10487317ff	scooter mechanic
+b5410470-6cb6-43ea-8233-4824ba6a27b0	scooter mechanic
+6f140645-1904-4493-862d-06929ec947db	scooter mechanic
+12cc8ad3-5cee-457f-8657-1db8ed812558	scooter mechanic
+666beb29-be82-4f5f-8556-644ed5af8d90	scooter mechanic
+f0a5b497-94d3-47ec-8bd6-427d91d15adf	scooter mechanic
+e989b029-509c-42de-801c-2d6d547967d2	scooter mechanic
+cb8e1f3b-4317-4ab1-a0b7-27177305508e	reading books
+74cb73ae-0a87-44c1-862f-b6c0a110134d	reading books
+db0d0446-56f7-4689-9f2d-a4bb521fd87d	reading books
+a5739422-9281-49d2-b15f-2a275cd478d3	reading books
+4792d019-ca0c-48fe-b8e6-12e325e8d8ee	reading books
+a62958d9-c4d1-4123-9e92-508885240558	reading books
+729c3692-812c-43a5-9dd7-cc0bd3fbd5a6	walking on street
+407deb0a-6dad-4c1c-8a81-1079f0b9823d	walking on street
+ab9b7b7c-33ad-4358-929f-8b36b719f45f	walking on street
+d73e5118-f353-4891-88bc-f09b8096207b	walking on street
+847c00b4-fa4f-4f19-b2e0-485d3180cd7c	walking on street
+c53d79b9-097a-45e6-9603-22f1a63fece8	bike mechanic
+5f2fe227-e8fc-4635-8b3e-2f56e9be61b5	bike mechanic
+29928d46-5209-4d00-9fbf-b5c056845ded	bike mechanic
+f93bf4f8-08d1-4f94-8b5f-92fdd6b37e30	bike mechanic
+17e336f3-3c84-403a-a917-3e7ed6986ce3	bike mechanic
+4f71337b-ddf2-4458-8eff-078521dc169b	playing games / video games
+920b7d53-9058-4194-aba5-61a44bcc9a4e	playing games / video games
+e042c0ce-5038-4d45-810d-28ef585d03f7	playing games / video games
+68c73d6c-8102-42ae-8d07-c5529bb933fa	working out at home
+8fe27146-988e-4ed5-891d-1c128f601895	working out at home
+e57140cd-b6d6-4355-a962-1146e0635a95	working out at home
+3b47e163-76ea-4eb5-9a99-afacf6fb41ec	working at desk
+776749e2-dbd3-46f9-95f9-d20c431f4749	working at desk
+e6351387-e982-4646-b719-d869b1ab61f0	working at desk
+46f5a400-654f-4aa3-8185-da5ea97bc1a6	gardening
+b29b29d2-8335-4307-b5d7-976fa2b38f28	gardening
+f576f1bf-5433-488b-8833-8320f087e72b	gardening
+37f4000f-e934-4799-957d-e89dc504fd07	playing board games
+a34576fe-35e7-4b5d-8661-200c4ed75f7a	playing board games
+97ebd96b-6b14-4b15-b3c5-d1d1b40d8192	playing board games
+03f5b0be-94ac-4d22-9c30-7bf0456ccf0e	cycling / jogging
+c2e5f216-0572-44ba-8d19-2e92492133f1	cycling / jogging
+b911ae10-1671-4590-9abe-94e8b2d351a0	cycling / jogging
+899ba208-6938-4112-bc72-6b968f0d28b9	watching tv
+f6056f70-591b-472d-8702-598059f65982	watching tv
+8c2a4f62-afc9-428c-88c7-e17b1ef7a066	watching tv
+725afa52-ac60-4a17-b416-9a830fa8fc7b	practicing a musical instrument
+e2f492ff-74c7-4fdc-8c93-0d4ebf66cc63	practicing a musical instrument
+81aaf910-e32a-46f0-a1e9-a45fe5e19e25	practicing a musical instrument
+53da674a-089d-428a-a719-e322b2de002b	baker
+3534864b-2289-4aaf-b3ed-10eeeee7acd2	baker
+7d3d85d3-88e4-4bb9-9175-e37107100f2e	playing with pets
+35b1a8c7-80fd-402f-b240-768926b7bcee	playing with pets
+6baf5a36-83e6-4fb4-81bc-970dffd1df49	eating
+28d09ed6-8e95-4f09-bf5d-a6b1b1538923	eating
+4ace159b-7af8-492b-9910-e14a5cb72d1a	car - commuting, road trip
+14644fba-afeb-471c-8d82-2a7783dc67c5	car - commuting, road trip
+003a90b1-7960-44e2-ba2f-308ba83adc70	potting plants (indoor)
+291953b9-d7f3-403b-8b8a-7aa935847064	potting plants (indoor)
+02cf2e59-26be-43be-a4d9-7d6cbcfd0898	playing cards
+c46f73ae-b8f2-4517-af09-09e9295a5871	playing cards
+0b22b43c-f57e-4f4f-8840-3ca0bf086b9c	fixing something in the home
+dcf3224e-7c89-4fff-8a1a-c5c45bcc8896	fixing something in the home
+af16d9ef-f726-49dc-bf2e-73553dd417fd	car/scooter washing
+f6277269-1c87-439c-b5be-d4a02343018a	car/scooter washing
+068626dd-73d3-4bc7-917e-e12e6445eab9	bike
+0be670d2-3216-4261-ab73-f9941b69e04c	working out outside
+38a1e1f1-b490-4ce2-97e1-2fa7305ac3db	biology experiments
+e8efc369-ac71-49cd-91fc-de1136b21721	indoor navigation (walking)

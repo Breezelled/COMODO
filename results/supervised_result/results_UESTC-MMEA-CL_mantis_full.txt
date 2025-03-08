@@ -1,0 +1,13 @@
+
+Dataset: UESTC-MMEA-CL
+Fine-tuning type: full
+Number of epochs: 40
+Learning rate: 0.0001
+Batch size: 48
+
+Test results:
+accuracy: 0.9300911854103343
+top3_accuracy: 0.9825227963525835
+top5_accuracy: 0.9901215805471124
+
+Validation accuracy: 0.9249617151607963
