@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import math
+
 
 class COMODOLoss(nn.Module):
     def __init__(
@@ -81,7 +81,11 @@ class InfoNCE(nn.Module):
         learn_temperature=False,
     ):
         super().__init__()
-        self.temperature = nn.Parameter(torch.tensor(temperature)) if learn_temperature else temperature
+        self.temperature = (
+            nn.Parameter(torch.tensor(temperature))
+            if learn_temperature
+            else temperature
+        )
         self.reduction = reduction
         self.negative_mode = negative_mode
         self.symmetric_loss = symmetric_loss
@@ -196,99 +200,10 @@ def normalize(*xs):
 class L2DistillLoss(nn.Module):
     def __init__(self):
         super(L2DistillLoss, self).__init__()
-        self.mse_loss = nn.MSELoss(reduction='mean')
-    
+        self.mse_loss = nn.MSELoss(reduction="mean")
+
     def forward(self, student_features: torch.Tensor, teacher_features: torch.Tensor):
         student_features = F.normalize(student_features, p=2, dim=1)
-        
+
         loss = self.mse_loss(student_features, teacher_features)
         return loss
-
-    def __init__(
-        self,
-        embeddingQ_encoded,
-        # attentionQ_encoded,
-        student_model,
-        teacher_temp=0.1,
-        student_temp=0.05,
-        alpha=0.5,
-    ):
-        """
-        student_model:    IMU model
-        teacher_temp:   distillation temperature for teacher model
-        student_temp:   distillation temperature for student model
-        alpha:          weight for both loss
-        """
-        super(LEADLoss, self).__init__()
-        self.embeddingQ_encoded = embeddingQ_encoded
-        # self.attentionQ_encoded = attentionQ_encoded
-        self.student_model = student_model
-        self.teacher_temp = teacher_temp
-        self.student_temp = student_temp
-        self.alpha = alpha
-
-    def _vectorized_kl_loss(self, rel_T: torch.Tensor, rel_S: torch.Tensor) -> torch.Tensor:
-        """
-        [B, 3, H, L, L]
-        R=3 means QKV
-        """
-        B, R, H_T, L_T, _ = rel_T.shape
-        _, _, H_S, L_S, _ = rel_S.shape
-        if H_T != H_S:
-            rel_T = rel_T.mean(dim=2, keepdim=True).expand(-1, -1, H_S, -1, -1)
-        if L_T > L_S:
-            rel_T = rel_T.mean(dim=-2, keepdim=True).expand(-1, -1, -1, L_S, -1)
-            rel_T = rel_T.mean(dim=-1, keepdim=True).expand(-1, -1, -1, -1, L_S)
-            # rel_T: [B, 3, H, L_S, L_S]
-        R_T = F.softmax(rel_T, dim=-1)  # shape: [B, R, H, L, L]
-        R_S = F.log_softmax(rel_S, dim=-1)  # shape: [B, R, H, L, L]
-        loss = F.kl_div(R_S, R_T, reduction='sum')
-        # normalize by relation head num and seq length and batch size and QKV
-        loss = loss / (B * R * H_S * L_S)
-        return loss
-
-    def forward(
-        self,
-        imu_features: torch.Tensor,
-        Z_embed_ref: torch.Tensor,
-        Z_attn_ref: torch.Tensor,
-    ):
-
-        batch_size = Z_embed_ref.shape[0]
-
-        embedding, attn = self.student_model(imu_features)
-
-        Z_embed_stu = F.normalize(embedding, p=2, dim=1)
-        embeddingQ_encoded = self.embeddingQ_encoded
-        embedQ = torch.cat((embeddingQ_encoded, Z_embed_ref))
-
-        # probability scores distribution for embedding
-        T_embed_ref = torch.einsum("nc,ck->nk", Z_embed_ref, embedQ.t().clone().detach())
-        Stu_embed = torch.einsum("nc,ck->nk", Z_embed_stu, embedQ.t().clone().detach())
-
-        # FKL
-        T_embed_ref = F.softmax(T_embed_ref / self.teacher_temp, dim=1)
-        Stu_embed = Stu_embed / self.student_temp
-
-        loss_Embed_Distill = -torch.mul(T_embed_ref, F.log_softmax(Stu_embed, dim=1)).sum() / batch_size
-
-        self.embeddingQ_encoded = embedQ[batch_size:]
-
-        
-        Z_attn_stu = attn
-        # attentionQ_encoded = self.attentionQ_encoded
-        # attnQ = torch.cat((attentionQ_encoded, Z_attn_ref))
-
-        d_r_T = Z_attn_ref.shape[-1]
-        d_r_S = Z_attn_stu.shape[-1]
-
-        A_T_scaleddot = torch.matmul(Z_attn_ref, Z_attn_ref.transpose(-1, -2)) / math.sqrt(d_r_T)
-        A_S_scaleddot = torch.matmul(Z_attn_stu, Z_attn_stu.transpose(-1, -2)) / math.sqrt(d_r_S)
-
-        loss_Attn_Distill = self._vectorized_kl_loss(A_T_scaleddot, A_S_scaleddot)
-
-        # self.attentionQ_encoded = attnQ[batch_size:]
-
-        total_loss = loss_Embed_Distill + loss_Attn_Distill
-
-        return total_loss, loss_Embed_Distill, loss_Attn_Distill

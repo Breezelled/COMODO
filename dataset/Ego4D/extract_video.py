@@ -6,6 +6,7 @@ import ffmpeg
 from tqdm import tqdm
 from multiprocessing import Pool
 
+
 def process_video(args):
     filename, fps, size, output_dir = args
     aw, ah = 0.5, 0.5
@@ -78,4 +79,6 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    preprocess_videos(args.fps, args.size, args.video_dir, args.output_dir, args.workers)
+    preprocess_videos(
+        args.fps, args.size, args.video_dir, args.output_dir, args.workers
+    )

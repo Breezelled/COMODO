@@ -9,8 +9,9 @@ import torchaudio
 from tqdm import tqdm
 from matplotlib import pyplot as plt
 
+
 def display_imu(imu, imu_rs):
-    fig, (ax1, ax2, ax3, ax4) = plt.subplots(4,1)
+    fig, (ax1, ax2, ax3, ax4) = plt.subplots(4, 1)
 
     ax1.set_title("Acc.")
     ax2.set_title("Gyro.")
@@ -34,6 +35,7 @@ def display_imu(imu, imu_rs):
     plt.savefig("imu.png", dpi=300)
     plt.close()
 
+
 def resample(
     signals: np.ndarray,
     timestamps: np.ndarray,
@@ -46,7 +48,9 @@ def resample(
     signals = torch.as_tensor(signals)
     timestamps = torch.from_numpy(timestamps).unsqueeze(-1)
     signals = torchaudio.functional.resample(
-        waveform=signals.data, orig_freq=original_sample_rate, new_freq=resample_rate,
+        waveform=signals.data,
+        orig_freq=original_sample_rate,
+        new_freq=resample_rate,
     ).numpy()
 
     nsamples = len(signals.T)
@@ -89,18 +93,22 @@ def load_imu(imu_csv_path, duration):
     gyro_y = df["gyro_y"].fillna(0).tolist()
     gyro_z = df["gyro_z"].fillna(0).tolist()
     timestamps = df["canonical_timestamp_ms"].to_numpy()
-    
-    signal = np.array([accl_x, accl_y, accl_z, gyro_x, gyro_y, gyro_z,])
-    # print(f"Video duration {duration}s")
-    # print(f"IMU duration {(timestamps[-1]-timestamps[0])/1000}s")
 
-    # print(signal.shape)
+    signal = np.array(
+        [
+            accl_x,
+            accl_y,
+            accl_z,
+            gyro_x,
+            gyro_y,
+            gyro_z,
+        ]
+    )
+
     signal_rs, timestamps_rs = resampleIMU(signal, timestamps)
-    # print(signal_rs.shape)
-    # print(f"IMU resample duration {(timestamps_rs[-1]-timestamps_rs[0])/1000}s")
-    # display_imu(signal, signal_rs)
-    # input()
+
     return signal_rs, timestamps_rs
+
 
 def load_json(json_path: str):
     """
@@ -110,10 +118,10 @@ def load_json(json_path: str):
         data = json.load(f_name)
     return data
 
+
 def get_ego4d_metadata(types: str = "clip"):
     return {
-        clip[f"{types}_uid"]: clip
-        for clip in load_json("../ego4d.json")[f"{types}s"]
+        clip[f"{types}_uid"]: clip for clip in load_json("../ego4d.json")[f"{types}s"]
     }
 
 
@@ -122,9 +130,7 @@ def process_imu_files(video_dir, output_dir):
     meta_video = get_ego4d_metadata("video")
     for filename in tqdm(glob.glob(f"{video_dir}/*.csv")):
         name_clip = filename.split("/")[-1].replace(".csv", "")
-        duration = meta_video[name_clip]["video_metadata"][
-                "video_duration_sec"
-            ]
+        duration = meta_video[name_clip]["video_metadata"]["video_duration_sec"]
         signal, timestamps = load_imu(filename, duration)
 
         with open(f"{output_dir}/{name_clip}.npy", "wb") as file:
@@ -135,7 +141,9 @@ def process_imu_files(video_dir, output_dir):
 
 if __name__ == "__main__":
 
-    parser = argparse.ArgumentParser(description="Extract npy from the given csv imu files")
+    parser = argparse.ArgumentParser(
+        description="Extract npy from the given csv imu files"
+    )
     parser.add_argument(
         "-v",
         "--video_dir",

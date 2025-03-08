@@ -7,6 +7,7 @@ from tqdm import tqdm
 
 dataset_dir = "your_dataset_path"
 
+
 def resample_ns(
     signals: np.ndarray,
     timestamps_ns: np.ndarray,
@@ -24,23 +25,26 @@ def resample_ns(
     signals_tensor = torch.as_tensor(signals)
     # Convert timestamps_ms to tensor of shape (N,1)
     ts_tensor = torch.from_numpy(timestamps_ms).unsqueeze(-1)
-    
+
     # Resample the signals using torchaudio
     signals_resampled = torchaudio.functional.resample(
         waveform=signals_tensor, orig_freq=orig_rate, new_freq=new_rate
     ).numpy()
-    
+
     # Number of samples after resampling
     nsamples = signals_resampled.shape[-1]
     period = 1 / new_rate  # period in seconds
     # Get initial time in seconds (from milliseconds)
     initial_sec = ts_tensor[0].item() / 1000.0
     # Generate new time instants (in seconds)
-    ntimes = (torch.arange(nsamples, dtype=torch.float32) * period).view(-1, 1) + initial_sec
+    ntimes = (torch.arange(nsamples, dtype=torch.float32) * period).view(
+        -1, 1
+    ) + initial_sec
     # Convert new timestamps to milliseconds and then to nanoseconds
     new_timestamps_ms = (ntimes * 1000).squeeze().numpy()
     new_timestamps_ns = new_timestamps_ms * 1e6
     return signals_resampled, new_timestamps_ns
+
 
 def resampleIMU(signal, timestamps):
     """
@@ -57,6 +61,7 @@ def resampleIMU(signal, timestamps):
         return signal_rs, timestamps_rs
     else:
         return signal, timestamps
+
 
 def process_imu(folder):
     """
@@ -100,6 +105,7 @@ def process_imu(folder):
     # Rename the original processed_imu.pkl to imu_1000hz.pkl
     print(f"Processed folder: {folder}")
 
+
 def main():
     # Read folder names from folders_with_categories.txt (first column is the folder name)
     input_file = dataset_dir + "folders_with_categories.txt"
@@ -111,6 +117,7 @@ def main():
                 folders.append(parts[0])
     for folder in tqdm(folders):
         process_imu(folder)
+
 
 if __name__ == "__main__":
     main()

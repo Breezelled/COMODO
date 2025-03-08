@@ -4,10 +4,9 @@ import argparse
 import ffmpeg
 from tqdm import tqdm
 from multiprocessing import Pool
-import random
 
-# Global dataset directory (change as needed)
 dataset_dir = "your_dataset_path"
+
 
 def process_video(args):
     folder, target_fps, target_size, json_map = args
@@ -25,7 +24,9 @@ def process_video(args):
             aria_key = key
             break
     if aria_key is None:
-        print(f"No key starting with 'aria' found in frame_aligned_videos for {full_root}")
+        print(
+            f"No key starting with 'aria' found in frame_aligned_videos for {full_root}"
+        )
         return
 
     try:
@@ -73,7 +74,8 @@ def process_video(args):
     except Exception as e:
         # If the exception contains stderr information, print it out.
         print(f"Error processing {name_clip}: {e}")
-    
+
+
 def main(target_fps, target_size, workers):
     # Load the takes.json data
     json_file = dataset_dir + "takes.json"
@@ -82,7 +84,7 @@ def main(target_fps, target_size, workers):
     # Build a mapping from full root_dir to the complete entry.
     # Adjust the keys by prepending the global dataset_dir.
     json_map = {os.path.join(dataset_dir, entry["root_dir"]): entry for entry in data}
-    
+
     # Read folder names from folders_with_categories.txt (first column, format: "folder\tcategory")
     input_file = dataset_dir + "folders_with_categories.txt"
     folders = []
@@ -91,19 +93,30 @@ def main(target_fps, target_size, workers):
             parts = line.strip().split("\t")
             if parts:
                 folders.append(parts[0])
-    
+
     # Construct a list of tasks for processing
     args_list = [(folder, target_fps, target_size, json_map) for folder in folders]
-    
+
     # Use a multiprocessing pool to process videos in parallel
     with Pool(workers) as pool:
         list(tqdm(pool.imap_unordered(process_video, args_list), total=len(args_list)))
-    
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Preprocess egoexo4d videos")
-    parser.add_argument("-f", "--fps", type=int, default=10, help="Target fps (e.g., 10)")
-    parser.add_argument("-s", "--size", type=int, default=224, help="Target frame size (e.g., 224)")
-    parser.add_argument("-w", "--workers", type=int, default=8, help="Number of parallel worker processes")
+    parser.add_argument(
+        "-f", "--fps", type=int, default=10, help="Target fps (e.g., 10)"
+    )
+    parser.add_argument(
+        "-s", "--size", type=int, default=224, help="Target frame size (e.g., 224)"
+    )
+    parser.add_argument(
+        "-w",
+        "--workers",
+        type=int,
+        default=8,
+        help="Number of parallel worker processes",
+    )
     args = parser.parse_args()
-    
+
     main(args.fps, args.size, args.workers)

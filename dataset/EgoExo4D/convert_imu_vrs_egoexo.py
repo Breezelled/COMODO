@@ -6,7 +6,6 @@ import pickle
 import numpy as np
 import pyvrs
 import glob
-import time
 import multiprocessing as mp
 import tqdm
 
@@ -44,7 +43,6 @@ def read_imu_vrs(vrs_path):
 
 def f(take_dir):
     # get vrs files which contains IMU traces
-    # default to use _noimagestreams.vrs as outlined in doc: https://docs.ego-exo4d-data.org/data/takes/
 
     all_vrs = glob.glob(os.path.join(take_dir, "*_noimagestreams.vrs"))
     # if len(all_vrs) != 1:
