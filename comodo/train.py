@@ -299,7 +299,6 @@ def main(args):
     (
         train_samples,
         instance_queue_encoded,
-        instance_queue_masked_encoded,
         instance_queue_samples,
     ) = ([], [], [], [])
 
@@ -344,7 +343,6 @@ def main(args):
 
     comodo_loss = COMODOLoss(
         instanceQ_encoded=instance_queue_encoded,
-        instanceQ_masked_encoded=instance_queue_masked_encoded,
         student_model=imu_student,
         teacher_temp=args.teacher_temp,
         student_temp=args.student_temp,
@@ -353,7 +351,6 @@ def main(args):
     del (
         encoded_videos,
         instance_queue_encoded,
-        instance_queue_masked_encoded,
         video_imu_train_dataloader,
     )
 
