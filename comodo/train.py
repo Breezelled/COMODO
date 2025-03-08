@@ -300,7 +300,7 @@ def main(args):
         train_samples,
         instance_queue_encoded,
         instance_queue_samples,
-    ) = ([], [], [], [])
+    ) = ([], [], [])
 
     for idx, encoded_video in enumerate(encoded_videos):
         imu = video_imu_train_dataloader.dataset[idx]["imu"]
