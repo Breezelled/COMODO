@@ -4,7 +4,7 @@
 
 <div align="center">
 
-## [Baiyu Chen](https://baiyuchen.work/)<sup>1,2</sup>, [Wilson Wongso](https://wilsonwongso.dev)<sup>1,2</sup>, [Zechen Li](https://scholar.google.com/citations?user=EVOzBF4AAAAJ&hl=en)<sup>1</sup>, [Yonchanok Khaokaew](https://scholar.google.com/citations?user=gk2wKhIAAAAJ&hl=en)<sup>1,2</sup> [Hao Xue](https://www.unsw.edu.au/staff/hao-xue)<sup>1,2</sup>, and [Flora Salim](https://fsalim.github.io/)<sup>1,2</sup>
+### [Baiyu Chen](https://baiyuchen.work/)<sup>1,2</sup>, [Wilson Wongso](https://wilsonwongso.dev)<sup>1,2</sup>, [Zechen Li](https://scholar.google.com/citations?user=EVOzBF4AAAAJ&hl=en)<sup>1</sup>, [Yonchanok Khaokaew](https://scholar.google.com/citations?user=gk2wKhIAAAAJ&hl=en)<sup>1,2</sup> [Hao Xue](https://www.unsw.edu.au/staff/hao-xue)<sup>1,2</sup>, and [Flora Salim](https://fsalim.github.io/)<sup>1,2</sup>
 
 <sup>1</sup> School of Computer Science and Engineering, University of New South Wales, Sydney, Australia<br/>
 <sup>2</sup> ARC Centre of Excellence for Automated Decision Making + Society
@@ -92,9 +92,6 @@ There's a lot of outstanding work on time-series and human activity recognition!
 
 If you have any questions or suggestions, feel free to contact Baiyu (Breeze) at `breeze.chen(at)student(dot)unsw(dot)edu(dot)au`.
 
-<div style="float: right;">
-    <img height="100px" src="assets/unsw_logo.png">
-    <img height="100px" src="assets/adms_logo.svg" style="margin-left: 10px;">
-    <img height="100px" src="assets/arc_centre.svg" style="margin-left: 10px;">
-    
-</div>
+<img align="right" height="100px" src="assets/arc_centre.svg" style="margin-left: 10px;">
+<img align="right" height="100px" src="assets/adms_logo.svg" style="margin-left: 10px;">
+<img align="right" height="100px" src="assets/unsw_logo.png">
