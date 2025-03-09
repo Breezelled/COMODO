@@ -39,14 +39,14 @@ from utils.collate_util import *
 args = ArgumentParser()
 args.add_argument("--video_ckpt", type=str)
 args.add_argument("--imu_ckpt", type=str)
-args.add_argument("--dataset_path", type=str, default="dataset/egoexo4d")
-args.add_argument("--is_raw", action="store_true", default=True)
+args.add_argument("--dataset_path", type=str, default="dataset/ego4d_data")
+args.add_argument("--is_raw", action="store_true", default=True, help="For UESTC-MMEA-CL dataset")
 args.add_argument("--queue_size", type=int, default=16384)
-args.add_argument("--student_temp", type=float, default=5)
-args.add_argument("--teacher_temp", type=float, default=5)
+args.add_argument("--student_temp", type=float, default=0.05)
+args.add_argument("--teacher_temp", type=float, default=0.1)
 args.add_argument("--learning_rate", type=float, default=3e-4)
 args.add_argument("--num_epochs", type=int, default=20)
-args.add_argument("--batch_size", type=int, default=32)
+args.add_argument("--batch_size", type=int, default=128)
 args.add_argument(
     "--num_clips",
     type=int,

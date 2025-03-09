@@ -1,4 +1,7 @@
-from utils.dataloader_util import get_imu_label_test_dataloader, get_imu_label_train_dataloader
+from utils.dataloader_util import (
+    get_imu_label_test_dataloader,
+    get_imu_label_train_dataloader,
+)
 
 from utils.model_util import imu_student_mlp, imu_student, IMUStudent, IMUStudentMLP
 
@@ -17,10 +20,22 @@ import os
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
+
 args = ArgumentParser()
 args.add_argument("--dataset_path", type=str, default="dataset/egoexo4d")
-args.add_argument("--imu_ckpt", type=str, default="AutonLab/MOMENT-1-small")
-args.add_argument("--model_path", type=str, default="")
+args.add_argument(
+    "--imu_ckpt",
+    type=str,
+    default="AutonLab/MOMENT-1-small",
+    help="Path or Hugging Face model ID for pretrained models",
+)
+args.add_argument(
+    "--model_path",
+    type=str,
+    default="",
+    help="Path to the .pth checkpoint file for loading model weights",
+)
+
 
 def append_to_json(new_entry, category, json_file="results.json"):
     if os.path.exists(json_file):
@@ -42,7 +57,10 @@ def append_to_json(new_entry, category, json_file="results.json"):
 
     print(f"Results appended to {json_file}")
 
-def svm_test(train_dataloader, test_dataloader, imu_model, device, model_path, dataset, imu_ckpt):
+
+def svm_test(
+    train_dataloader, test_dataloader, imu_model, device, model_path, dataset, imu_ckpt
+):
     imu_model.remove_projection_layer()
 
     print("Extracting embeddings for SVM training...")
@@ -66,7 +84,7 @@ def svm_test(train_dataloader, test_dataloader, imu_model, device, model_path, d
         "model": model_path,
         "acc1": acc1,
         "acc3": acc3,
-        "acc5": acc5
+        "acc5": acc5,
     }
 
     if isinstance(imu_model, IMUStudent):
@@ -79,19 +97,44 @@ def svm_test(train_dataloader, test_dataloader, imu_model, device, model_path, d
     append_to_json(results, category)
 
 
-def unsupervised_rep_test(batch_size, imu_path, label2id, train_file_name, test_file_name, dataset, imu_is_raw, imu_ckpt, model_path):
+def unsupervised_rep_test(
+    batch_size,
+    imu_path,
+    label2id,
+    train_file_name,
+    test_file_name,
+    dataset,
+    imu_is_raw,
+    imu_ckpt,
+    model_path,
+):
     if "infonce" in model_path:
         imu_model = imu_student(768, imu_ckpt, 8, None, 6)
     else:
         imu_model = imu_student_mlp(128, imu_ckpt, 8, 2048, model_path)
 
-    if model_path != "" and "full" not in model_path: # mantis supervised finetuned wont load from here
+    if (
+        model_path != "" and "full" not in model_path
+    ):  # mantis supervised finetuned wont load from here
         imu_model.load_state_dict(torch.load(model_path, map_location=device))
 
-    train_dataloader = get_imu_label_train_dataloader(batch_size, imu_path, label2id, train_file_name, dataset, imu_is_raw, imu_ckpt)
-    test_dataloader = get_imu_label_test_dataloader(batch_size, imu_path, label2id, test_file_name, dataset, imu_is_raw, imu_ckpt)
-    
-    svm_test(train_dataloader, test_dataloader, imu_model, device, model_path, dataset, imu_ckpt)
+    train_dataloader = get_imu_label_train_dataloader(
+        batch_size, imu_path, label2id, train_file_name, dataset, imu_is_raw, imu_ckpt
+    )
+    test_dataloader = get_imu_label_test_dataloader(
+        batch_size, imu_path, label2id, test_file_name, dataset, imu_is_raw, imu_ckpt
+    )
+
+    svm_test(
+        train_dataloader,
+        test_dataloader,
+        imu_model,
+        device,
+        model_path,
+        dataset,
+        imu_ckpt,
+    )
+
 
 def main(args):
     dataset_path = args.dataset_path
@@ -123,7 +166,18 @@ def main(args):
     print("Dataset: ", dataset)
     print("IMU", args.imu_ckpt)
     print("Model", args.model_path)
-    unsupervised_rep_test(48, imu_path, label2id, path / "train.txt", path / "test.txt", dataset, is_raw, args.imu_ckpt, args.model_path)
+    unsupervised_rep_test(
+        48,
+        imu_path,
+        label2id,
+        path / "train.txt",
+        path / "test.txt",
+        dataset,
+        is_raw,
+        args.imu_ckpt,
+        args.model_path,
+    )
+
 
 if __name__ == "__main__":
     main(args.parse_args())
