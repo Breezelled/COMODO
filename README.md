@@ -4,18 +4,19 @@
 
 <div align="center">
 
-### [Baiyu Chen](https://baiyuchen.work/)<sup>1,2</sup>, [Wilson Wongso](https://wilsonwongso.dev)<sup>1,2</sup>, [Zechen Li](https://scholar.google.com/citations?user=EVOzBF4AAAAJ&hl=en)<sup>1</sup>, [Yonchanok Khaokaew](https://scholar.google.com/citations?user=gk2wKhIAAAAJ&hl=en)<sup>1,2</sup> [Hao Xue](https://www.unsw.edu.au/staff/hao-xue)<sup>1,2</sup>, and [Flora Salim](https://fsalim.github.io/)<sup>1,2</sup>
+### [Baiyu Chen](https://baiyuchen.work/)<sup>1,2</sup>, [Wilson Wongso](https://wilsonwongso.dev)<sup>1,2</sup>, [Zechen Li](https://scholar.google.com/citations?user=EVOzBF4AAAAJ&hl=en)<sup>1</sup>, [Yonchanok Khaokaew](https://scholar.google.com/citations?user=gk2wKhIAAAAJ&hl=en)<sup>1,2</sup>, [Hao Xue](https://www.unsw.edu.au/staff/hao-xue)<sup>1,2</sup>, and [Flora Salim](https://fsalim.github.io/)<sup>1,2</sup>
 
 <sup>1</sup> School of Computer Science and Engineering, University of New South Wales, Sydney, Australia<br/>
 <sup>2</sup> ARC Centre of Excellence for Automated Decision Making + Society
 
+[![arXiv](https://img.shields.io/badge/arXiv-2503.07259-b31b1b.svg)](https://arxiv.org/pdf/2503.07259)
 [![python](https://img.shields.io/badge/-Python_3.11-blue?logo=python&logoColor=white)](https://www.python.org/downloads/release/python-3110/)
 [![pytorch](https://img.shields.io/badge/PyTorch_2.1.2+-ee4c2c?logo=pytorch&logoColor=white)](https://pytorch.org/get-started/locally/)
 
 </div>
 
 <p align="center">
-  <img src="assets/logo.png" width="80">
+  <img src="assets/logo.png" height="100">
 </p>
 
 ## 🌟 Overview
@@ -68,7 +69,7 @@ python train.py \
 ```
 
 ### Unsupervised Representation Learning Evaluation
-We evaluate the learned IMU representations in an unsupervised manner. See Section 3.2 in our paper. We train a Support Vector Machine (SVM) on the extracted IMU features and evaluate classification accuracy on the test set. Run the following command to start the evaluation:
+We evaluate the learned IMU representations in an unsupervised manner. See Section 3.2 in our [paper](https://arxiv.org/pdf/2503.07259). We train a Support Vector Machine (SVM) on the extracted IMU features and evaluate classification accuracy on the test set. Run the following command to start the evaluation:
 
 ```bash
 python unsupervised_rep_test.py \
@@ -79,7 +80,7 @@ python unsupervised_rep_test.py \
 
 ## 🌍 Related Works & Baselines
 
-There's a lot of outstanding work on time-series and human activity recognition! Here's an incomplete list. Checkout Table 1 in our paper for IMU-based Human Activity Recognition comparisons with these studies:
+There's a lot of outstanding work on time-series and human activity recognition! Here's an incomplete list. Checkout Table 1 in our [paper](https://arxiv.org/pdf/2503.07259) for IMU-based Human Activity Recognition comparisons with these studies:
 
 - **MOMENT**: A Family of Open Time-series Foundation Models [[Paper](https://arxiv.org/pdf/2402.03885), [Code](https://github.com/moment-timeseries-foundation-model/moment), [Hugging Face](https://huggingface.co/AutonLab/MOMENT-1-small)]
 - **Mantis**: Lightweight Calibrated Foundation Model for User-Friendly Time Series Classification [[Paper](https://arxiv.org/pdf/2502.15637), [Code](https://github.com/vfeofanov/mantis), [Hugging Face](https://huggingface.co/paris-noah/Mantis-8M)]
