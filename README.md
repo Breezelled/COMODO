@@ -89,6 +89,22 @@ There's a lot of outstanding work on time-series and human activity recognition!
 - **Informer**: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting [[Paper](https://arxiv.org/pdf/2012.07436), [Code](https://github.com/thuml/Time-Series-Library)]
 - **IMU2CLIP**: Language-grounded Motion Sensor Translation with Multimodal Contrastive Learning [[Paper](https://aclanthology.org/2023.findings-emnlp.883.pdf), [Code](https://github.com/facebookresearch/imu2clip)]
 
+## Citation
+
+If you find this repository useful for your research, please consider citing our paper:
+
+```bibtex
+@misc{chen2025comodo,
+  title={COMODO: Cross-Modal Video-to-IMU Distillation for Efficient Egocentric Human Activity Recognition},
+  author={Chen, Baiyu and Wongso, Wilson and Li, Zechen and Khaokaew, Yonchanok and Xue, Hao and Salim, Flora},
+  year={2025},
+  eprint={2503.07259},
+  primaryClass={cs.CV},
+  note={arXiv preprint},
+  url={https://arxiv.org/abs/2503.07259}
+}
+```
+
 ## 📩 Contact
 
 If you have any questions or suggestions, feel free to contact Baiyu (Breeze) at `breeze.chen(at)student(dot)unsw(dot)edu(dot)au`.
